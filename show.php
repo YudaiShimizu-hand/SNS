@@ -18,5 +18,6 @@ $stmt->fetch();
 <body>
     <p>投稿内容:<?= $body; ?></p>
     <a href="edit.php?id=<?= $id; ?>">編集</a>
+    <a href="delete.php?id=<?= $id; ?>">削除</a>
 </body>
 </html>
