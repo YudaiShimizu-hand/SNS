@@ -15,7 +15,7 @@ if(!$forms){
 </head>
 <body>
     <?php while($form = $forms->fetch_assoc()):?>
-        <p><a href="#"><?= $form['body']; ?></a></p>
+        <p><a href="show.php?id=<?= $form['id']; ?>"><?= $form['body']; ?></a></p>
     <?php endwhile; ?>
 </body>
 </html>
