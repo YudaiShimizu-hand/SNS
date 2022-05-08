@@ -2,6 +2,7 @@
 require('db_plus.php');
 $content = filter_input(INPUT_POST, 'body', FILTER_SANITIZE_SPECIAL_CHARS );
 $stmt = $db->prepare('insert into forms(body) values(?)');
+require('image.php');
 if(!$stmt){
     echo "stmtのerrorです。";
 }
